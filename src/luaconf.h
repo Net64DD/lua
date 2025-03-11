@@ -11,6 +11,11 @@
 #include <limits.h>
 #include <stddef.h>
 
+#ifdef __SWITCH__
+#define LLONG_MAX  9223372036854775807LL   // Maximum value for long long
+#define LLONG_MIN -9223372036854775807LL - 1LL   // Minimum value for long long
+#define ULLONG_MAX 18446744073709551615ULL  // Maximum value for unsigned long long
+#endif
 
 /*
 ** ===================================================================
